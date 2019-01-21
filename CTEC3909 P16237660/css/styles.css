@@ -1,0 +1,187 @@
+/* MOBILE AND GLOBAL STYLES */
+
+/* applies to screens smaller than 500px (first breakpoint) */
+/* and above unless overwritten below */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+  color: #000000;
+  background-color: #DCDCDC;
+}
+
+nav {
+  display: none;
+  clear: both;
+  justify-content: center;
+  background: #808080;
+  flex-direction: column;
+}
+nav a {
+  padding: 1.25em 1.5em;
+  color: #ccc;
+  background: #555;
+  text-decoration: none;
+  transition: all 1.5s;
+}
+
+.menu {
+  background: #5558;
+  text-align: center;
+  color: #fff;
+  line-height: 2em;
+}
+.menu-toggle {
+  display: flex;
+}
+
+.nameof {
+  font-size: 90px;
+  color: #1d3246;
+}
+
+/*ME*/
+
+.sec1 {
+  background-color: #343148;
+}
+
+.me {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+}
+
+img {
+    width: 20%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+/**/
+h2{
+	color: black;
+	margin: 0;
+  text-align: center;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #2f5e9b;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/*----------------------
+ 	My Skills/Interests Reference: w3school
+----------------------*/
+
+.skills{
+	/*skill color section*/
+	/* rEFERENCE: w3SCHOOL*/
+
+	background-color: #EADEDB;
+}
+
+.skills .grid li{
+	padding: 0 32px;
+	flex-basis: 33%;
+	text-align: center;
+}
+
+.skills .grid li i{
+    font-size: 52px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.skills .grid li h4{
+	color: #fff;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.skills .grid li p{
+    margin: 0;
+}
+
+/*Media query break points with condition*/
+
+@media screen and (max-width: 1000px){
+
+	.skills .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.skills .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+@media screen and (max-width: 600px){
+
+
+}
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 500px) {
+
+  /* applies to screens wider than 499px */
+
+
+  .menu {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+  /* just change the menu colours on hover above mobile widths */
+  nav a:hover {
+    color: #dfd;
+    background: #797;
+  }
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1000px) {
+
+  /* applies to screens wider than 999px */
+
+
+}
